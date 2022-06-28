@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable-v24/ic_baseline_person_24.xml" value="0.149" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable-v24/ic_baseline_remove_red_eye_24.xml" value="0.149" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable-v24/ic_baseline_shopping_cart_24.xml" value="0.149" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable-v24/ic_outline_done_24.xml" value="0.149" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable-v24/ic_round_arrow_back_24.xml" value="0.1" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable-v24/image_card_back_ground.xml" value="0.1" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable-v24/show_password_selector.xml" value="0.1265" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/backback.xml" value="0.154" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/backgroundframe.xml" value="0.149" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/dashed_divider.xml" value="0.1265" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.177" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.177" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.149" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_outline_archive_24.xml" value="0.149" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_outline_archive_24black.xml" value="0.177" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_outline_camera_alt_24.xml" value="0.149" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_outline_home_24.xml" value="0.157" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_outline_ios_share_24black.xml" value="0.177" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/ic_outline_web_24.xml" value="0.155" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/image_view_meal_shape.xml" value="0.154" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/lieaner_back_ground_shape.xml" value="0.157" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/drawable/nav_item_color_state.xml" value="0.157" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_add_category.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_add_meal.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_chef_profile.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_edit_profile.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_main.xml" value="0.192" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_profile.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_show_cheef_account.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_show_meal.xml" value="0.2" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_sign_up.xml" value="0.5" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/activity_splach.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/asd_all_meal_design.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/asd_comment_design.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/asd_featured_culinary_partners_design.xml" value="0.25" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/asd_ingredients_design.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/asd_meal_design.xml" value="0.2" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/asd_meal_tringing_nowdesign.xml" value="0.22" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/asd_steps_design.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/category_design.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/fragment_home.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/fragment_lodder_diloge.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/fragment_profile.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/fragment_saved.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/fragment_search.xml" value="0.33" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/fragment_setting.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/ingredients_design.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/layout/steps_design.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/hp/StudioProjects/ASD_SIde2/app/src/main/res/menu/bottom_menu.xml" value="0.20677083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

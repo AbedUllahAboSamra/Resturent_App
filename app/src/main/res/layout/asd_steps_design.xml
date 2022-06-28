@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_StepNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 1"
+            android:textSize="@dimen/_11sdp"
+            />
+        <TextView
+            android:id="@+id/tv_stepText"
+            android:text="asd asd asd asdas dlk efklsdf oijasdokj apdsok aspodk ,f;lbmdl fmvdl;vkm sdlf;m "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            />
+        <FrameLayout
+            android:id="@+id/frm_border"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/dashed_divider"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="16dp"
+            />
+    </LinearLayout>
+
+</FrameLayout>

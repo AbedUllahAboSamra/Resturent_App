@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:fillViewport="true"
+    android:paddingHorizontal="@dimen/_16sdp"
+    tools:context=".screen.AddScreens.AddCategoryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        >
+
+        <ImageView
+            android:id="@+id/btn_Back"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="start"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:src="@drawable/ic_round_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_addNewCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add new category"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_21sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/btn_Back"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Back" />
+
+
+        <!--- start groop 1  -->
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/image_card_back_ground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_addNewCategory"
+            app:layout_constraintVertical_bias="0.16000003">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_280sdp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/img_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_card_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="you should tack image for category ..."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_OR_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:elevation="5dp"
+            android:src="@drawable/ic_baseline_add_a_photo_24"
+            app:borderWidth="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <!--- end groop 1  -->
+
+
+        <!--- start groop 2  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lay_CategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Category name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fab_add_OR_delete">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_CategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lay_CategoryDiscribtion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/white"
+            android:hint="Category description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay_CategoryName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_CategoryDiscribtion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_Finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/black"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="1000dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lay_CategoryDiscribtion"
+            app:rippleColor="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:text="Done"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

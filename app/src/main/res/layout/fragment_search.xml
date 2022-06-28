@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SearchFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_marginBottom="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Search"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_23sdp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#D0F3F3F3"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00FFFFFF"
+                    android:drawableStart="@drawable/ic_baseline_search_24"
+                    android:gravity="start|center_vertical"
+                    android:hint="What are you carving?"
+                    android:paddingHorizontal="16dp"
+                    android:textColorHint="#DD818181"
+                    android:textSize="@dimen/_13sdp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="Collections You Might Like"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecView_AllMeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:overScrollMode="never" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DCF6F6F6"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/shep" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cook on a Budget"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="64dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Want to save money on your groceries?
+Search recipes by cost per serving."
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp"
+
+                    >
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="2"
+                        android:layout_marginHorizontal="16dp"
+
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="25dp"
+                        app:rippleColor="@color/white">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="25dp"
+                            app:cardElevation="0dp"
+                            app:rippleColor="@color/black">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="UNDER $1 USD"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+                        </com.google.android.material.card.MaterialCardView>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="2"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="25dp"
+                        app:rippleColor="@color/white">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="25dp"
+                            app:cardElevation="0dp"
+                            app:rippleColor="@color/black">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="UNDER $2 USD"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+                        </com.google.android.material.card.MaterialCardView>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="32dp"
+                    >
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="2"
+                        android:layout_marginHorizontal="16dp"
+
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="25dp"
+                        app:rippleColor="@color/white">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="25dp"
+                            app:cardElevation="0dp"
+                            app:rippleColor="@color/black">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="UNDER $3 USD"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+                        </com.google.android.material.card.MaterialCardView>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="2"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="25dp"
+                        app:rippleColor="@color/white">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="25dp"
+                            app:cardElevation="0dp"
+                            app:rippleColor="@color/black">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="UNDER $4 USD"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+                        </com.google.android.material.card.MaterialCardView>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="Featured Culinary Partners"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecView_FeaturedCulinaryPartners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:overScrollMode="never" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

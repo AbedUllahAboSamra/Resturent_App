@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/white"
+        android:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_MyToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btn_profile"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:backgroundTint="#DCDBDB"
+                    android:clickable="true"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="500dp"
+                    app:rippleColor="@color/black">
+
+                    <ImageView
+                        android:id="@+id/userImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_baseline_person_24" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/asdasd"
+                    android:layout_width="55dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/black"
+                    android:clickable="true"
+                    app:cardCornerRadius="20dp"
+                    app:rippleColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginEnd="4dp"
+                            android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+                        <TextView
+                            android:id="@+id/numberOfitems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.asd_side.Fragments.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FAFAFA"
+        app:itemIconSize="@dimen/_17sdp"
+        app:itemIconTint="@drawable/nav_item_color_state"
+
+        app:menu="@menu/bottom_menu"
+
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

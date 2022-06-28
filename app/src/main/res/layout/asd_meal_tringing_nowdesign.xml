@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_260sdp"
+    android:layout_height="@dimen/_300sdp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/fui_transparent"
+    app:cardMaxElevation="0dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/rrr"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_265sdp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="23dp"
+        app:rippleColor="@color/white"
+        android:clickable="true"
+
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_view_meal_shape">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imv_mealImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#8FD5D5D5"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="0dp">
+
+                        <TextView
+                            android:id="@+id/tv_chef_nema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="8dp"
+                            android:layout_marginVertical="6dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxWidth="150dp"
+                            android:maxLines="2"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btn_Archive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#BF191919"
+                        android:clickable="true"
+                        app:cardCornerRadius="30dp"
+                        app:rippleColor="@color/white">
+
+                        <ImageView
+                            android:id="@+id/imagemiasd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_outline_archive_24" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_mealName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="-22dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold"
+                    />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btn_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="@color/black"
+                    android:clickable="true"
+                    app:cardCornerRadius="25dp"
+                    app:rippleColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="2dp"
+                            android:gravity="center"
+                            android:text="Show"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "960236359804",
+    "project_id": "asd-side",
+    "storage_bucket": "asd-side.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960236359804:android:f5a613cf8a36e5ea39f9f9",
+        "android_client_info": {
+          "package_name": "com.example.asd_side"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960236359804-gokcuebm6alk5gbo6solq7j0t5s0g9j3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNSX18fSccimq8D7AqIEJdGEDxy832Ppc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960236359804-gokcuebm6alk5gbo6solq7j0t5s0g9j3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

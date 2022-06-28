@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.SavedFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:overScrollMode="never"
+        android:layout_marginBottom="45dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_ScreenName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp"
+                android:text="My Groceries"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/numberOfItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="580 item Saved"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:text="Category's"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:text="Meal's"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewMeals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

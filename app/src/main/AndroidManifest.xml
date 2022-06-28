@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asd_side">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/SideChef"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.ASD_SIde"
+        >
+        <activity
+            android:name=".screen.AddScreens.AddMealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.ChefProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.ProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".screen.ShowMealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AddScreens.AddCategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".screen.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".screen.BordingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.onBordingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.SplachActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screen.MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

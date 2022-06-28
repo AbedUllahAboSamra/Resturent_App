@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.AddScreens.AddMealActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btn_Back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+
+            android:src="@drawable/ic_round_arrow_back_24" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Meal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/btn_Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:textColor="#4E4E4E"
+            android:textSize="@dimen/_11sdp" />
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:dividerColor="#F3F3F3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="297dp"
+                android:layout_height="368dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_270sdp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="22dp"
+                    app:cardElevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/img_userImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+
+                        />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btn_tackImage"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/black"
+                    app:cardCornerRadius="22222dp"
+
+                    app:cardElevation="3dp"
+                    app:rippleColor="@color/white">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:src="@drawable/ic_outline_camera_alt_24" />
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_DisplayName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:background="@color/white"
+                android:hint="Meal Name"
+                android:textColorHint="#676767"
+                app:hintTextColor="#676767">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_mealName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="textPersonName"
+                    android:maxLength="25"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_desribtion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:background="@color/white"
+                android:hint="Description"
+                android:textColorHint="#676767"
+                app:hintTextColor="#676767">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_desribtion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:background="@color/white"
+                android:hint="time in min"
+                android:textColorHint="#676767"
+                app:hintTextColor="#676767">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Steps"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Ingredients"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_Ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
